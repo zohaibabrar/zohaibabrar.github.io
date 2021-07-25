@@ -1,0 +1,354 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255) url(media/ripple.svg) no-repeat center;
+  z-index: 99;
+}
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background-color: rgba(0, 0, 0, 0.19);
+  .media{
+    img{
+      margin-left: 1.5rem;
+      width: 7rem;
+      height: auto;
+      border-radius: 50%;
+    }
+    h4{
+      padding-left: 1rem;
+      padding-top: 1rem;
+      font-family: 'STIX Two Math', serif;
+    }
+    p{
+      font-family: 'Merriweather', serif;
+      font-size: 15px;
+      color: black;
+      opacity: 0.5;
+    }
+    display: block;
+    margin-left: 2rem;
+  }
+.nav{
+  margin-left: 5rem;
+  a{
+    color: black;
+    opacity: 0.5;
+  }
+  a:hover{
+    font-weight: bolder;
+  }
+}  
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+  background-color: white;
+  #home{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    .main{
+      display: flex;
+      float: right;
+      img{
+        width: 22rem;
+        height: auto;
+        box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+    }
+  }
+    .intro{
+      padding-top: 6%;
+      //TITLE START
+      .ml11 {
+        font-weight: 700;
+        font-size: 3.5em;
+      }
+      .ml11 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+      } 
+      .ml11 .line {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        height: 80%;
+        width: 3px;
+        background-color: rgb(7, 4, 4);
+        transform-origin: 0 50%;
+      }  
+      .ml11 .line1 { 
+        top: 0; 
+        left: 0;
+      } 
+      .ml11 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+      .ml11 .letters{font-family: 'STIX Two Math', serif;}
+      // TITLE ENDS
+
+      #caption{
+        font-family: 'Merriweather', serif;
+        color: black;
+        opacity: 0.7;
+        font-style: italic;
+      }
+      button{
+        border-radius: 34px;
+        color: black;
+        margin-top: 3%;
+        i{
+          padding-right: -5rem;
+        }
+        span{
+          padding-left: 1rem;
+          font-family: 'STIX Two Math', serif;
+        }
+      }
+    }
+  }
+  #about,#skills,#education,#projects,#contact{
+    margin-top: 40%;
+    .heading{
+      .first,.paragraph{
+        font-family: 'Merriweather', serif;
+	      color: black;
+	      opacity: 0.5;
+        font-size: medium;
+      }
+      .second{
+        font-family: 'STIX Two Math', serif;
+	      color: black;
+        font-size: x-large;
+      }
+      .paragraph{
+        font-size: medium;
+        opacity: 0.6;
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 30px;
+      }
+      .bold{
+        font-weight: bolder;
+      }
+      .col-md-3{
+        box-shadow: 5px 10px 20px #888888;
+        margin: 3%;
+        margin-top: 7%;
+        width: 140px;
+        height: 190px;
+        img{
+          width: 60px;
+          height: auto;
+          padding-top: 10%;
+        }
+        h2{
+          font-family: 'STIX Two Math', serif;
+	        color: black;
+          font-size: x-large;
+          padding-top: 10%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+  #skills{
+    margin-top: 30%;
+    .card{
+      margin-top: 10%;
+      border: none;
+      border-bottom: 1px solid red;
+      .rotation{
+        background-color: yellow;
+        transform: rotate(45deg);
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+        margin-left: 40%;
+        img{
+          width: 2rem;
+          height: auto;
+          top: 9px;
+          left: 8px;
+          height: auto;
+          position: relative;
+          transform: rotate(-45deg);
+        }
+      }
+      .card-title{
+        padding-top: 10%;
+        font-family: 'STIX Two Math', serif;
+	      color: black;
+      }
+      .card-text{
+        font-family: 'Merriweather', serif;
+      	color: black;
+      	opacity: 0.6;
+        font-size: small;
+        
+        padding-top: 5%;
+        line-height: 30px;
+      }
+    }
+  }
+  #education{
+    margin-top: 26%;
+    .institute{
+      display: flex;
+      margin-top: 5%;
+      img{
+        width: 3rem;
+        height: auto;
+      }
+      h5{
+        padding-left: 10%;
+        font-family: 'Merriweather', serif;
+	      color: black;
+	      opacity: 0.5;
+      }
+    }
+  }
+  #projects{
+    margin-top: 25%;
+    .row{
+      .col-md-4{
+        margin: 3%;
+        width: 62rem;
+        height: 20rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        float: left;
+        .text{
+          font-family: 'Merriweather', serif;
+	        color: white;
+        }
+      }
+    } 
+  }
+  #contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/contact.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-bottom: -5%;
+    form{
+      .yellow{
+        .contact{
+          i{
+            float: right;
+            margin-top: 44%;
+          }
+        }
+      } 
+      input{
+        border: none;
+        width: 40%;
+        margin-top: 5%;
+        border-bottom: 1px solid grey;
+        font-family: 'Merriweather', serif;
+	      color: black;
+	      opacity: 0.7;
+      }
+    }
+    
+  }
+}
+
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media(min-width:1000x){
+  #contact{
+    margin-left: 80%;
+    margin-bottom: -10%;
+    .contact{
+      i{
+        padding-top: -10%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+  .developer{
+    #text-area{
+      position: absolute;
+      margin-top: 30%;
+      span{
+        color: rgb(95, 95, 95);
+        text-align: justify;
+      }
+      p{color: rgb(95, 95, 95);}
+      button span{color: black;}
+    }
+  }
+  #contact{
+    margin-left: 80%;
+    .contact{
+      i{
+        
+        padding-top: 30%;
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+/* 
+.text-gray {
+  color: #aaa;
+}
+*/
